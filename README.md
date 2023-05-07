@@ -23,3 +23,6 @@ Finally, run the server:
 ```bash
 pipenv run python3 manage.py runserver
 ```
+## Notes
+Only authenticated users can book.  
+Only superusers can see all the bookings.
