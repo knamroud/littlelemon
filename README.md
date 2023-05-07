@@ -26,3 +26,9 @@ pipenv run python3 manage.py runserver
 ## Notes
 Only authenticated users can book.  
 Only superusers can see all the bookings or add menu items.
+Test the following endpoints:
+```bash
+restaurant <- index, serving html contents
+restaurant/menu <- get/post menu items through insomnia
+restaurant/book <- get/post books through insomnia
+```
