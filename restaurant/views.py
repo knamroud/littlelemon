@@ -10,8 +10,8 @@ def index(request):
 
 
 class MenuItemView(generics.ListCreateAPIView):
-    queryset = models.Menu.objects.all()
-    serializer_class = serializers.MenuSerializer
+    queryset = models.MenuItem.objects.all()
+    serializer_class = serializers.MenuItemSerializer
 
     def get_permissions(self):
         return [permissions.IsAuthenticated() if self.request.method == "GET" else permissions.IsAdminUser()]
@@ -21,8 +21,8 @@ class MenuItemView(generics.ListCreateAPIView):
 
 
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = models.Menu.objects.all()
-    serializer_class = serializers.MenuSerializer
+    queryset = models.MenuItem.objects.all()
+    serializer_class = serializers.MenuItemSerializer
 
     def get_permissions(self):
         return [permissions.IsAuthenticated() if self.request.method == "GET" else permissions.IsAdminUser()]

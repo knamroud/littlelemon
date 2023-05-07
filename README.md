@@ -25,4 +25,4 @@ pipenv run python3 manage.py runserver
 ```
 ## Notes
 Only authenticated users can book.  
-Only superusers can see all the bookings.
+Only superusers can see all the bookings or add menu items.
