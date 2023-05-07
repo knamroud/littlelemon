@@ -32,3 +32,4 @@ restaurant <- index, serving html contents
 restaurant/menu <- get/post menu items through insomnia
 restaurant/book <- get/post books through insomnia
 ```
+I used `authtoken` for authentication, see the `authn/urls.py` file to check the endpoints.  
